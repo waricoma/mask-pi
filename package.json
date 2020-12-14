@@ -19,7 +19,7 @@
     "preinstall": "npx only-allow yarn",
     "start": "node ./dist/index.js",
     "quick": "ts-node ./index.ts",
-    "build": "ts-node ./build.ts && tsc --lib es2020",
+    "build": "ts-node ./build.ts && tsc",
     "readme": "npx readme-md-generator",
     "test": "jest",
     "test:debug": "jest --watch",
