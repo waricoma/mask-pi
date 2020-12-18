@@ -1,1 +1,51 @@
-<h1>MaskPi</h1>
+<style>
+  body {
+    margin: 0 auto;
+  }
+  #left {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+  }
+  #left img {
+    width: 100%;
+  }
+  #right {
+    margin: 0;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+  }
+  #right img {
+    width: 100%;
+  }
+</style>
+<div id="left">
+  <img class="mask-image" src="./image">
+</div>
+<div id="right">
+  <img class="mask-image" src="./image">
+</div>
+<script>
+const { ipcRenderer } = require('electron');
+const short = require('short-uuid');
+
+const translator = short();
+
+ipcRenderer.on('reload-mask-image', () => {
+  const uniqueCode = translator.new();
+  document.getElementsByClassName('mask-image')[0].src = `./image?unique=${uniqueCode}`;
+  document.getElementsByClassName('mask-image')[1].src = `./image?unique=${uniqueCode}`;
+});
+
+ipcRenderer.on('update-background-color', (event, color) => {
+  document.getElementsByTagName('body')[0].backgroundColor = color;
+});
+
+ipcRenderer.send('did-finish-load');
+</script>

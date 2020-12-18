@@ -17,14 +17,14 @@
   },
   "scripts": {
     "preinstall": "npx only-allow yarn",
-    "start": "node ./dist/index.js",
-    "quick": "ts-node ./index.ts",
+    "start": "electron ./dist/index.js",
+    "quick": "ts-node ./src/index.ts",
     "build": "ts-node ./build.ts && tsc",
     "readme": "npx readme-md-generator",
     "test": "jest",
     "test:debug": "jest --watch",
     "commit": "git cz",
-    "lint": "tsc --noEmit && eslint ./*.{js,ts,tsx} ./lib/*.ts ./__tests__/*.test.ts --config ./.eslintrc.js --no-ignore --cache --color --fix",
+    "lint": "tsc --noEmit && eslint ./*.{js,ts,tsx} ./src/lib/*.ts ./src/__tests__/*.test.ts --config ./.eslintrc.js --no-ignore --cache --color --fix",
     "ignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o ./.gitignore",
     "document": "typedoc --plugin typedoc-plugin-markdown --out ./docs/ ./*.ts && license-checker --json > ./licenses.json"
   },
@@ -53,16 +53,16 @@
   },
   "dependencies": {
     "dotenv": "8.2.0",
+    "electron": "^11.1.0",
     "express": "4.17.1",
     "express-fileupload": "1.2.0",
     "node-web-gpio": "1.0.1",
     "pino": "6.8.0",
-    "puppeteer-core": "5.5.0"
+    "short-uuid": "^4.1.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.19",
     "@types/node": "14.11.10",
-    "@types/puppeteer-core": "2.0.0",
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/parser": "4.8.1",
     "add-text-to-markdown": "2.0.0",
