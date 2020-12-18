@@ -53,12 +53,12 @@
   },
   "dependencies": {
     "dotenv": "8.2.0",
-    "electron": "^11.1.0",
+    "electron": "11.1.0",
     "express": "4.17.1",
     "express-fileupload": "1.2.0",
     "node-web-gpio": "1.0.1",
     "pino": "6.8.0",
-    "short-uuid": "^4.1.0"
+    "short-uuid": "4.1.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.19",
