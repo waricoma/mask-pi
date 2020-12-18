@@ -5,7 +5,7 @@ import { requestGPIOAccess } from 'node-web-gpio';
 export class WebGPIO {
   private listeningBtnPort;
 
-  public async setNumToListeningBtnPort(port: number | 5): Promise<void> {
+  public async setNumToListeningBtnPort(port: number): Promise<void> {
     const gpioAccess = await requestGPIOAccess();
     this.listeningBtnPort = gpioAccess.ports.get(port);
   }

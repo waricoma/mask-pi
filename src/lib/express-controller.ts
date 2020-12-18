@@ -12,6 +12,7 @@ export class ExpressServer {
   private maskTemp = -1;
   private maskHum = -1;
   private maskSmell = -1;
+  private maskBtn = false;
   private maskMode: 'image' | 'voice' = 'voice';
   private updateMaskMode: (mode: 'image' | 'voice') => void;
   private updateMaskSpeech: (speech: string) => void;
@@ -72,7 +73,7 @@ export class ExpressServer {
 
       const mode = req.body.mode.trim().toLowerCase();
 
-      if (['image', 'mode'].indexOf(mode) === -1) {
+      if (['image', 'voice'].indexOf(mode) === -1) {
         res.status(400).send({ message: 'a value of mode is only image/voice', mode: this.maskMode });
         return;
       }
@@ -95,8 +96,12 @@ export class ExpressServer {
     this.maskSmell = smell;
   }
 
-  public generateMaskStatusObj(): { temp: number; hum: number; smell: number } {
-    return { temp: this.maskTemp, hum: this.maskHum, smell: this.maskSmell };
+  public setMaskBtn(btn: boolean): void {
+    this.maskBtn = btn;
+  }
+
+  public generateMaskStatusObj(): { temp: number; hum: number; smell: number; btn: boolean } {
+    return { temp: this.maskTemp, hum: this.maskHum, smell: this.maskSmell, btn: this.maskBtn };
   }
 
   public setFuncToUpdateMaskMode(func: (mode: 'image' | 'voice') => void): void {

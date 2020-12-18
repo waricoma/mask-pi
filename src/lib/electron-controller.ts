@@ -15,7 +15,7 @@ export class ElectronController {
     yellow: '#FFFF00',
   };
 
-  public async launchMaskPiDisplay(ops: { url: string; w: number | 2560; h: number | 635 }): Promise<void> {
+  public async launchMaskPiDisplay(ops: { url: string; w: number; h: number }): Promise<void> {
     let win: electron.BrowserWindow;
 
     await new Promise<void>((resolve) => {
