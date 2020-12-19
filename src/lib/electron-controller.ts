@@ -32,7 +32,7 @@ export class ElectronController {
           },
         });
 
-        win.webContents.openDevTools();
+        // win.webContents.openDevTools();
         win.loadURL(`file://${__dirname}/../../public/display/index.html`);
 
         win.on('closed', () => {

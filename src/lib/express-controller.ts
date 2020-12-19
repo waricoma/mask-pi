@@ -18,7 +18,7 @@ export class ExpressServer {
   private updateMaskSpeech: (speech: string) => void;
 
   constructor() {
-    this.app.use(express.static(`${__dirname}/../../public/`));
+    this.app.use(express.static(`${__dirname}/../../public/mask-client/build/`));
     this.app.use(
       fileUpload({
         limits: { fileSize: 50 * 1024 * 1024 },
@@ -36,16 +36,16 @@ export class ExpressServer {
         res.status(400).send({ message: 'plz set a data of image' });
         return;
       }
-      if (!req.files.image) {
+      if (!req.files['files[image]']) {
         res.status(400).send({ message: 'plz set a image' });
         return;
       }
-      if (['image/jpeg', 'image/png'].indexOf(req.files.image.mimetype) === -1) {
+      if (['image/jpeg', 'image/png'].indexOf(req.files['files[image]'].mimetype) === -1) {
         res.status(400).send({ message: 'plz set a jpeg/png' });
         return;
       }
 
-      fs.writeFileSync(`${__dirname}/../../public/display/image`, req.files.image.data);
+      fs.writeFileSync(`${__dirname}/../../public/display/image`, req.files['files[image]'].data);
       this.maskMode = 'image';
       this.updateMaskMode(this.maskMode);
       res.status(200).send({ message: 'updated' });
