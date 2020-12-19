@@ -1,7 +1,7 @@
 import axiosBase from "axios";
 
 export const axios = axiosBase.create({
-  baseURL: "http://localhost:5000",
+  baseURL: `http://${window.location.host}`,
   headers: {
     "content-type": "application/json",
     "X-Requested-With": "XMLHttpRequest",
