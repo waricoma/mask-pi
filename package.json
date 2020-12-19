@@ -24,7 +24,7 @@
     "test": "jest",
     "test:debug": "jest --watch",
     "commit": "git cz",
-    "lint": "tsc --noEmit && eslint ./*.{js,ts,tsx} ./src/lib/*.ts ./src/__tests__/*.test.ts --config ./.eslintrc.js --no-ignore --cache --color --fix",
+    "lint": "tsc --noEmit && eslint ./*.{js,ts} ./src/lib/*.ts ./src/__tests__/*.test.ts --config ./.eslintrc.js --no-ignore --cache --color --fix",
     "ignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o ./.gitignore",
     "document": "typedoc --plugin typedoc-plugin-markdown --out ./docs/ ./*.ts && license-checker --json > ./licenses.json"
   },
@@ -52,11 +52,15 @@
     }
   },
   "dependencies": {
+    "@chirimen/sht30": "^1.0.3",
+    "delay": "^4.4.0",
     "dotenv": "8.2.0",
     "electron": "11.1.0",
     "express": "4.17.1",
     "express-fileupload": "1.2.0",
+    "mcp-spi-adc": "^3.1.0",
     "node-web-gpio": "1.0.1",
+    "node-web-i2c": "^1.1.4",
     "pino": "6.8.0",
     "short-uuid": "4.1.0"
   },
