@@ -35,13 +35,13 @@ const webGPIO = new WebGPIO();
   webGPIO.setFuncToListeningBtn((state) => {
     expressServer.setMaskBtn(state === 1);
   });
-  webGPIO.setFuncToUpdateMaskTemp((temp) => {
-    expressServer.setMaskTemp(temp);
-  });
-  webGPIO.setFuncToUpdateMaskHum((hum) => {
-    expressServer.setMaskHum(hum);
-  });
-  webGPIO.setFuncToUpdateMaskSmell((smell) => {
-    expressServer.setMaskSmell(smell);
-  });
+  // webGPIO.setFuncToUpdateMaskTemp((temp) => {
+  //   expressServer.setMaskTemp(temp);
+  // });
+  // webGPIO.setFuncToUpdateMaskHum((hum) => {
+  //   expressServer.setMaskHum(hum);
+  // });
+  // webGPIO.setFuncToUpdateMaskSmell((smell) => {
+  //   expressServer.setMaskSmell(smell);
+  // });
 })();

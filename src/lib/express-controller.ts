@@ -19,6 +19,7 @@ export class ExpressServer {
 
   constructor() {
     this.app.use(express.static(`${__dirname}/../../public/mask-client/build/`));
+    this.app.use('/speech', express.static(`${__dirname}/../../public/speech`));
     this.app.use(
       fileUpload({
         limits: { fileSize: 50 * 1024 * 1024 },
@@ -63,6 +64,42 @@ export class ExpressServer {
       this.updateMaskMode(this.maskMode);
       this.updateMaskSpeech(speech);
       res.status(200).send({ message: 'received a speech' });
+    });
+
+    this.app.post('/api/mask/smell', (req, res): void => {
+      if (!('smell' in req.body)) {
+        res.status(400).send({ message: 'plz set a value of smell' });
+        return;
+      }
+
+      const smell = parseInt(req.body.smell.trim().toLowerCase(), 10);
+
+      this.maskSmell = smell;
+      res.status(200).send({ message: 'received a smell' });
+    });
+
+    this.app.post('/api/mask/temp', (req, res): void => {
+      if (!('temp' in req.body)) {
+        res.status(400).send({ message: 'plz set a value of temp' });
+        return;
+      }
+
+      const temp = parseInt(req.body.temp.trim().toLowerCase(), 10);
+
+      this.maskTemp = temp;
+      res.status(200).send({ message: 'received a temp' });
+    });
+
+    this.app.post('/api/mask/hum', (req, res): void => {
+      if (!('hum' in req.body)) {
+        res.status(400).send({ message: 'plz set a value of hum' });
+        return;
+      }
+
+      const hum = parseInt(req.body.hum.trim().toLowerCase(), 10);
+
+      this.maskHum = hum;
+      res.status(200).send({ message: 'received a hum' });
     });
 
     this.app.post('/api/mode', (req, res): void => {
