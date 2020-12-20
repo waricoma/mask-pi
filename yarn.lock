@@ -270,7 +270,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@chirimen/sht30@^1.0.3":
+"@chirimen/sht30@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@chirimen/sht30/-/sht30-1.0.3.tgz#e401ded73d3d70f936ac90f5b67ebfde01975682"
   integrity sha512-S6LUFYjSdIPSaK8RukEYD+UKS4yKpiFfMbUK9m9Phbsa704SQAvo+bUtbPqJko+XZX8lADXr12BdEW8QrLl+Qw==
@@ -1368,7 +1368,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
 
-axios@^0.21.0:
+axios@0.21.0:
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
   integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
@@ -5318,7 +5318,7 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
-mcp-spi-adc@^3.1.0:
+mcp-spi-adc@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/mcp-spi-adc/-/mcp-spi-adc-3.1.0.tgz#b1cd6044b1ef4f13fc2e2ecdf77ef3136df29d30"
   integrity sha512-N0cHnL7jOJN8XeSZnL76dk/SG5mOIK+9Bwrm9Rqr2lp5jK72dbUFdR1xuKvAAC3gOQ12UeYlSc/NzoZ6n9BClw==
@@ -5592,12 +5592,12 @@ node-notifier@^8.0.0:
     uuid "^8.3.0"
     which "^2.0.2"
 
-node-web-gpio@^1.0.1:
+node-web-gpio@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/node-web-gpio/-/node-web-gpio-1.0.1.tgz#f2c8a63edcfd0d448450cd9cb5b3042052d98b51"
   integrity sha512-TfO87vH6bjhjYtj9B4DRJwuIZHQfSXG8O2LwucTeZ7Haiv4uEXJ/9WXglqqbRekIFmNcrYORNrTB9iucJU8HWQ==
 
-node-web-i2c@^1.1.4:
+node-web-i2c@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/node-web-i2c/-/node-web-i2c-1.1.4.tgz#65146f24f18c5e7ae3a76a222ae4bf50b01cc988"
   integrity sha512-CCYn4h5AbmDixmtzBUNJs+1DTpbRho0AdC5CJ1wPNpXzE6njvnB4UcF07uiUoM+U7zxjoxWe4sCtL0zhbIXIuw==
@@ -6180,7 +6180,7 @@ psl@^1.1.28:
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
   integrity sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==
 
-public-ip@^4.0.3:
+public-ip@4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/public-ip/-/public-ip-4.0.3.tgz#ca96979ddbd3e14d3378fd92b94a657b5696f288"
   integrity sha512-IofiJJWoZ8hZHBk25l4ozLvcET0pjZSxocbUfh4sGkjidMOm4iZNzzWxezGqGsVY7HuxiK7SkyJKHNeT0YQ7uw==
@@ -6202,7 +6202,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qr-image@^3.2.0:
+qr-image@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/qr-image/-/qr-image-3.2.0.tgz#9fa8295beae50c4a149cf9f909a1db464a8672e8"
   integrity sha1-n6gpW+rlDEoUnPn5CaHbRkqGcug=
