@@ -1,6 +1,8 @@
 'use strict';
 
 import electron from 'electron';
+import qr from 'qr-image';
+import fs from 'fs';
 
 export class ElectronController {
   private win: electron.BrowserWindow;
@@ -15,7 +17,14 @@ export class ElectronController {
     yellow: '#FFFF00',
   };
 
+  public async generateQrCode(url: string): Promise<void> {
+    const qrPng = qr.imageSync(url, { type: 'png' });
+    fs.writeFileSync(`${__dirname}/../../public/display/image`, qrPng);
+  }
+
   public async launchMaskPiDisplay(ops: { url: string; w: number; h: number }): Promise<void> {
+    await this.generateQrCode(ops.url);
+
     let win: electron.BrowserWindow;
 
     await new Promise<void>((resolve) => {
