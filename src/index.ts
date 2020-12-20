@@ -1,7 +1,7 @@
 'use strict';
 
 import dotenv from 'dotenv';
-import publicIp from 'public-ip';
+import ip from 'ip';
 import { ExpressServer } from './lib/express-controller';
 import { ElectronController } from './lib/electron-controller';
 import { WebGPIO } from './lib/web-gpio-controller';
@@ -21,7 +21,7 @@ const webGPIO = new WebGPIO();
 (async () => {
   await expressServer.listen(SERVER_PORT);
   await electronController.launchMaskPiDisplay({
-    url: `http://${await publicIp.v4()}:${SERVER_PORT}/display/index.html`,
+    url: `http://${ip.address()}:${SERVER_PORT}/display/index.html`,
     w: DISPLAY_W,
     h: DISPLAY_H,
   });

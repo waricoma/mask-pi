@@ -72,7 +72,7 @@ export class ExpressServer {
         return;
       }
 
-      const smell = parseInt(req.body.smell.trim().toLowerCase(), 10);
+      const smell = parseInt(req.body.smell, 10);
 
       this.maskSmell = smell;
       res.status(200).send({ message: 'received a smell' });
@@ -84,7 +84,7 @@ export class ExpressServer {
         return;
       }
 
-      const temp = parseInt(req.body.temp.trim().toLowerCase(), 10);
+      const temp = parseInt(req.body.temp, 10);
 
       this.maskTemp = temp;
       res.status(200).send({ message: 'received a temp' });
@@ -96,7 +96,7 @@ export class ExpressServer {
         return;
       }
 
-      const hum = parseInt(req.body.hum.trim().toLowerCase(), 10);
+      const hum = parseInt(req.body.hum, 10);
 
       this.maskHum = hum;
       res.status(200).send({ message: 'received a hum' });
