@@ -73,12 +73,12 @@ async function main() {
     await sleep(0.008);
     await port4.write(0);
     console.log(a);
-    await axios.post('http://localhost:5000/api/mask', { smell: a });
+    await axios.post('http://localhost:5000/api/mask/smell', { smell: a });
     if (i == 3) {
       await measure(sht30);
-      await axios.post('http://localhost:5000/api/temp', { temp: b });
+      await axios.post('http://localhost:5000/api/mask/temp', { temp: b });
       console.log(b);
-      await axios.post('http://localhost:5000/api/hum', { hum: c });
+      await axios.post('http://localhost:5000/api/mask/hum', { hum: c });
       console.log(c);
       i = 0;
     }
