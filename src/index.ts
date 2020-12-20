@@ -21,7 +21,7 @@ const webGPIO = new WebGPIO();
 (async () => {
   await expressServer.listen(SERVER_PORT);
   await electronController.launchMaskPiDisplay({
-    url: `http://${ip.address()}:${SERVER_PORT}/display/index.html`,
+    url: `http://${ip.address()}:${SERVER_PORT}`,
     w: DISPLAY_W,
     h: DISPLAY_H,
   });
