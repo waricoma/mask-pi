@@ -52,18 +52,18 @@
     }
   },
   "dependencies": {
-    "@chirimen/sht30": "^1.0.3",
-    "axios": "^0.21.0",
+    "@chirimen/sht30": "1.0.3",
+    "axios": "0.21.0",
     "dotenv": "8.2.0",
     "electron": "11.1.0",
     "express": "4.17.1",
     "express-fileupload": "1.2.0",
-    "mcp-spi-adc": "^3.1.0",
-    "node-web-gpio": "^1.0.1",
-    "node-web-i2c": "^1.1.4",
+    "mcp-spi-adc": "3.1.0",
+    "node-web-gpio": "1.0.1",
+    "node-web-i2c": "1.1.4",
     "pino": "6.8.0",
-    "public-ip": "^4.0.3",
-    "qr-image": "^3.2.0",
+    "public-ip": "4.0.3",
+    "qr-image": "3.2.0",
     "short-uuid": "4.1.0"
   },
   "devDependencies": {
