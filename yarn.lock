@@ -5557,10 +5557,10 @@ node-notifier@^8.0.0:
     uuid "^8.3.0"
     which "^2.0.2"
 
-node-web-gpio@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/node-web-gpio/-/node-web-gpio-1.0.1.tgz#f2c8a63edcfd0d448450cd9cb5b3042052d98b51"
-  integrity sha512-TfO87vH6bjhjYtj9B4DRJwuIZHQfSXG8O2LwucTeZ7Haiv4uEXJ/9WXglqqbRekIFmNcrYORNrTB9iucJU8HWQ==
+node-web-gpio@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/node-web-gpio/-/node-web-gpio-1.0.2.tgz#d76feec6b705e49a152db7ed7e360aefdb9e4951"
+  integrity sha512-EUM626qrD20uCR7fjbb9wZFfUpnFY8tponGaPnj39gnu81VIPxv+eF3fqbAT7skjt9z4zYbQ/mCFXjg740bm8A==
 
 node-web-i2c@1.1.4:
   version "1.1.4"
