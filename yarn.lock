@@ -900,10 +900,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
   integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
-"@types/node@^14.0.14":
-  version "14.14.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.14.tgz#f7fd5f3cc8521301119f63910f0fb965c7d761ae"
-  integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
+"@types/node@^14.14.25":
+  version "14.14.34"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.34.tgz#07935194fc049069a1c56c0c274265abeddf88da"
+  integrity sha512-dBPaxocOK6UVyvhbnpFIj2W+S+1cBTkHQbFQfeeJhoKFbzYcVUGHvddeWPSucKATb3F0+pgDq0i6ghEaZjsugA==
 
 "@types/node@^14.6.2":
   version "14.14.33"
@@ -3581,7 +3581,7 @@ husky@4.3.6:
     slash "^3.0.0"
     which-pm-runs "^1.0.0"
 
-i2c-bus@^5.2.0:
+i2c-bus@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/i2c-bus/-/i2c-bus-5.2.1.tgz#ccbfff0a5f431cfcf7f17fb56624774323b7c5fd"
   integrity sha512-ihfUEG8BPbmVkwLJv2vZmvXUNZ8TUCIqnTAVgSwzqH72jouT3HdpJOJCGIwJt8SQ8H7QpefvWqDuT40TnnUELQ==
@@ -5568,14 +5568,14 @@ node-web-gpio@1.0.1:
   resolved "https://registry.yarnpkg.com/node-web-gpio/-/node-web-gpio-1.0.1.tgz#f2c8a63edcfd0d448450cd9cb5b3042052d98b51"
   integrity sha512-TfO87vH6bjhjYtj9B4DRJwuIZHQfSXG8O2LwucTeZ7Haiv4uEXJ/9WXglqqbRekIFmNcrYORNrTB9iucJU8HWQ==
 
-node-web-i2c@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/node-web-i2c/-/node-web-i2c-1.1.4.tgz#65146f24f18c5e7ae3a76a222ae4bf50b01cc988"
-  integrity sha512-CCYn4h5AbmDixmtzBUNJs+1DTpbRho0AdC5CJ1wPNpXzE6njvnB4UcF07uiUoM+U7zxjoxWe4sCtL0zhbIXIuw==
+node-web-i2c@1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/node-web-i2c/-/node-web-i2c-1.1.6.tgz#10e1dcbcb03bd7f5ade90e526c8810b132526ec9"
+  integrity sha512-/rXBfEBnNSlloaFgezeXYPDJmQflACBXv8dW187pjUAKdBel8Q6nsrnEKiGwh9slC68zMx2kDZdrZeq/YB6gCg==
   dependencies:
     "@types/i2c-bus" "^5.1.0"
-    "@types/node" "^14.0.14"
-    i2c-bus "^5.2.0"
+    "@types/node" "^14.14.25"
+    i2c-bus "^5.2.1"
 
 nopt@^4.0.1:
   version "4.0.3"
