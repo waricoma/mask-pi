@@ -5267,13 +5267,13 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
-mcp-spi-adc@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/mcp-spi-adc/-/mcp-spi-adc-3.1.0.tgz#b1cd6044b1ef4f13fc2e2ecdf77ef3136df29d30"
-  integrity sha512-N0cHnL7jOJN8XeSZnL76dk/SG5mOIK+9Bwrm9Rqr2lp5jK72dbUFdR1xuKvAAC3gOQ12UeYlSc/NzoZ6n9BClw==
+mcp-spi-adc@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/mcp-spi-adc/-/mcp-spi-adc-3.1.1.tgz#0cb23fc3e91921e40fc1dfc4eccb9b2cdc42a29c"
+  integrity sha512-sm4Pc1EoH6rvCwg/kAlkS4zBEGNqG6XEVdrVtXTErPOpBjkgC5p6bQ8qFcDblKY+tK4HoD59ZCJuhVLjB0x1Lw==
   dependencies:
     lodash.clone "^4.5.0"
-    spi-device "^3.1.0"
+    spi-device "^3.1.1"
 
 mdast-util-compact@^1.0.0:
   version "1.0.4"
@@ -5456,7 +5456,7 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nan@^2.14.1:
+nan@^2.14.1, nan@^2.14.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
@@ -6953,13 +6953,13 @@ spdx-satisfies@^4.0.0:
     spdx-expression-parse "^3.0.0"
     spdx-ranges "^2.0.0"
 
-spi-device@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/spi-device/-/spi-device-3.1.0.tgz#aae5e4c1da452481686ee688218777ddbeb7090c"
-  integrity sha512-qFTRkXl4fbjjL64A6XXYqUf+GcfVuvRapxNveqJ+NzHmF0seW75M7aHPN4uziGEJol3+1XGyUu//qITptujm+A==
+spi-device@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/spi-device/-/spi-device-3.1.1.tgz#4b721ed8d937bd0fd5c6ed4fe72c06e13b625558"
+  integrity sha512-Z6XJSEBakDDTmP17kz+/7zOflj77Hzm0e6H1rrDXngY5e7V8bteQMoQw8Etmk0FuEN2spwdLteW0ck0KNlISww==
   dependencies:
     bindings "^1.5.0"
-    nan "^2.14.1"
+    nan "^2.14.2"
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
