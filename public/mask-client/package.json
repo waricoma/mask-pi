@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "4.14.168",
+    "@types/lodash": "4.14.170",
     "@types/testing-library__jest-dom": "5.9.5"
   }
 }
