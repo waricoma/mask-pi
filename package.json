@@ -61,7 +61,7 @@
     "ip": "1.1.5",
     "mcp-spi-adc": "3.1.1",
     "node-web-gpio": "1.0.1",
-    "node-web-i2c": "1.1.4",
+    "node-web-i2c": "1.1.33",
     "pino": "6.13.4",
     "qr-image": "3.2.0",
     "short-uuid": "4.1.0"

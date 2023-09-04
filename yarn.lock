@@ -905,15 +905,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
   integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
-"@types/node@^14.0.14":
-  version "14.14.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.14.tgz#f7fd5f3cc8521301119f63910f0fb965c7d761ae"
-  integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
-
 "@types/node@^14.6.2":
   version "14.14.33"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.33.tgz#9e4f8c64345522e4e8ce77b334a8aaa64e2b6c78"
   integrity sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==
+
+"@types/node@^18.0.0":
+  version "18.17.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.14.tgz#a621ad26e7eb076d6846dd3d39557ddf9d89f04b"
+  integrity sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -3590,13 +3590,13 @@ husky@5.2.0:
   resolved "https://registry.yarnpkg.com/husky/-/husky-5.2.0.tgz#fc5e1c2300d34855d47de4753607d00943fc0802"
   integrity sha512-AM8T/auHXRBxlrfPVLKP6jt49GCM2Zz47m8G3FOMsLmTv8Dj/fKVWE0Rh2d4Qrvmy131xEsdQnb3OXRib67PGg==
 
-i2c-bus@^5.2.0:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/i2c-bus/-/i2c-bus-5.2.1.tgz#ccbfff0a5f431cfcf7f17fb56624774323b7c5fd"
-  integrity sha512-ihfUEG8BPbmVkwLJv2vZmvXUNZ8TUCIqnTAVgSwzqH72jouT3HdpJOJCGIwJt8SQ8H7QpefvWqDuT40TnnUELQ==
+i2c-bus@^5.2.2:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/i2c-bus/-/i2c-bus-5.2.3.tgz#a1350df43f0a2f94d84369c3fe55fbc47174a6ff"
+  integrity sha512-kzFgU0OSIZlaeUUa+VK7L+kkxnj4feimCVQDOPrzj0cTaB+hNweTsO8/j7QvW2gRgWQ7ds5IpfFjpBrX+fMNng==
   dependencies:
     bindings "^1.5.0"
-    nan "^2.14.1"
+    nan "^2.17.0"
 
 iconv-lite@0.4.24, iconv-lite@^0.4.17, iconv-lite@^0.4.24:
   version "0.4.24"
@@ -5508,10 +5508,15 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nan@^2.14.1, nan@^2.14.2:
+nan@^2.14.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
+
+nan@^2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.17.0.tgz#c0150a2368a182f033e9aa5195ec76ea41a199cb"
+  integrity sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -5598,14 +5603,14 @@ node-web-gpio@1.0.1:
   resolved "https://registry.yarnpkg.com/node-web-gpio/-/node-web-gpio-1.0.1.tgz#f2c8a63edcfd0d448450cd9cb5b3042052d98b51"
   integrity sha512-TfO87vH6bjhjYtj9B4DRJwuIZHQfSXG8O2LwucTeZ7Haiv4uEXJ/9WXglqqbRekIFmNcrYORNrTB9iucJU8HWQ==
 
-node-web-i2c@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/node-web-i2c/-/node-web-i2c-1.1.4.tgz#65146f24f18c5e7ae3a76a222ae4bf50b01cc988"
-  integrity sha512-CCYn4h5AbmDixmtzBUNJs+1DTpbRho0AdC5CJ1wPNpXzE6njvnB4UcF07uiUoM+U7zxjoxWe4sCtL0zhbIXIuw==
+node-web-i2c@1.1.33:
+  version "1.1.33"
+  resolved "https://registry.yarnpkg.com/node-web-i2c/-/node-web-i2c-1.1.33.tgz#5e724429285f3b9569aeacce6e55aa4d4a4f526c"
+  integrity sha512-SbZ+1vxCTpGeEFcD3MoCJ5nFcqUjFHN+bbP7Vysewx16vFVM2E6kfLdCfGxhDCFCn9mfSFhC38XEbbgEcceb1w==
   dependencies:
     "@types/i2c-bus" "^5.1.0"
-    "@types/node" "^14.0.14"
-    i2c-bus "^5.2.0"
+    "@types/node" "^18.0.0"
+    i2c-bus "^5.2.2"
 
 nopt@^4.0.1:
   version "4.0.3"
