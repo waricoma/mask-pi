@@ -60,7 +60,7 @@
     "express-fileupload": "1.2.0",
     "ip": "1.1.5",
     "mcp-spi-adc": "3.1.1",
-    "node-web-gpio": "1.0.1",
+    "node-web-gpio": "1.0.29",
     "node-web-i2c": "1.1.4",
     "pino": "6.13.4",
     "qr-image": "3.2.0",
